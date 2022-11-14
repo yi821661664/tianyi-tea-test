@@ -32,9 +32,14 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'TianyiUIEngine/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TianyiUIEngine' => ['TianyiUIEngine/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'TianyiUIEngine' => ['TianyiUIEngine/Assets/*']
+  }
+  s.dependency 'Masonry'
+  s.dependency 'MJRefresh'
+  s.dependency 'MJExtension'
+  s.dependency 'SDWebImage'
+  s.dependency 'Colours'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

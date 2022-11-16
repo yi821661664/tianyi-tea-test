@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)getImagaResource:(NSString*)name bundleName:(NSString*)bundleName;
 
+- (NSString *)getFilePath:(NSString*)name type:(NSString *)type bundleName:(NSString*)bundleName;
+
 @end
 
 NS_ASSUME_NONNULL_END

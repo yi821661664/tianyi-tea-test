@@ -23,4 +23,17 @@
     return image;
 }
 
+- (NSString *)getFilePath:(NSString*)name type:(NSString *)type bundleName:(NSString*)bundleName {
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+    url = [url URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.framework",bundleName]];
+    NSString *filePath = nil;
+    if (url) {
+        NSBundle *bundle = [NSBundle bundleWithURL:url];
+        url = [bundle URLForResource:bundleName withExtension:@"bundle"];
+        bundle = [NSBundle bundleWithURL:url];
+        filePath = [bundle pathForResource:name ofType:type];
+    }
+    return filePath;
+}
+
 @end

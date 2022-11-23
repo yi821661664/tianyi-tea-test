@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TYBaseTool : NSObject
 
++ (UIImage *)getLoadingImg:(BOOL)isRed;
+
 + (UIImage *)getImagaResource:(NSString*)name bundleName:(NSString*)bundleName;
 
 + (NSString *)getFilePath:(NSString*)name type:(NSString *)type bundleName:(NSString*)bundleName;

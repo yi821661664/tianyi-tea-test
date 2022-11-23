@@ -9,6 +9,20 @@
 
 @implementation TYBaseTool
 
++ (UIImage *)getLoadingImg:(BOOL)isRed {
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
+    url = [url URLByAppendingPathComponent:@"TianyiUIEngine.framework"];
+    UIImage *image = nil;
+    if (url) {
+        NSBundle *bundle = [NSBundle bundleWithURL:url];
+        url = [bundle URLForResource:@"TianyiUIEngine" withExtension:@"bundle"];
+        NSString *imageStr = isRed?@"icons/ty_icon_loading_red.png":@"icons/ty_icon_loading_blue.png";
+        bundle = [NSBundle bundleWithURL:url];
+        image = [UIImage imageWithContentsOfFile:[bundle pathForResource:imageStr ofType:nil]];
+    }
+    return image;
+}
+
 + (UIImage *)getImagaResource:(NSString*)name bundleName:(NSString*)bundleName {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
     url = [url URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.framework",bundleName]];

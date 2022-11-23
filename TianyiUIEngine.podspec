@@ -40,6 +40,7 @@ TODO: Add long description of the pod here.
   s.dependency 'MJExtension'
   s.dependency 'SDWebImage'
   s.dependency 'Colours'
+  s.dependency 'MBProgressHUD'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

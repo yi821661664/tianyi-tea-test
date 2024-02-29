@@ -1,29 +1,72 @@
-# TianyiUIEngine
+# vuepress-plugin-md-tags
 
-[![CI Status](https://img.shields.io/travis/易召强/TianyiUIEngine.svg?style=flat)](https://travis-ci.org/易召强/TianyiUIEngine)
-[![Version](https://img.shields.io/cocoapods/v/TianyiUIEngine.svg?style=flat)](https://cocoapods.org/pods/TianyiUIEngine)
-[![License](https://img.shields.io/cocoapods/l/TianyiUIEngine.svg?style=flat)](https://cocoapods.org/pods/TianyiUIEngine)
-[![Platform](https://img.shields.io/cocoapods/p/TianyiUIEngine.svg?style=flat)](https://cocoapods.org/pods/TianyiUIEngine)
+> npm : https://www.npmjs.com/package/vuepress-plugin-md-tags
 
-## Example
+## Intro
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+[vuepress@1.x文档tag插件](https://herrylo.github.io/vuepress-plugin/)
 
-## Requirements
+[文档tag插件示例](https://herrylo.github.io/vuepress-plugin/)
 
-## Installation
+ ![img](https://raw.githubusercontent.com/HerryLo/vuepress-plugin-md-tags/b5641170d16041ae8491e1e25395661b5e3625ec/asset/demo.png)
 
-TianyiUIEngine is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+适用于 [vuepress@1.x](https://vuepress.vuejs.org/zh/plugin/using-a-plugin.html) 的插件，参考tag样式可以查看 [link here](https://herrylo.github.io/vuepress-plugin/)，配置代码参考[link here](https://github.com/HerryLo/BlogPress/blob/master/docs/.vuepress/config.js#L225)
 
-```ruby
-pod 'TianyiUIEngine'
+当然这需要你的这个页面顶部有 [Front Matter](https://vuepress.vuejs.org/zh/guide/frontmatter.html#front-matter), 本插件使用了官方预定义的 [内置搜索中的 `tags`](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%86%85%E7%BD%AE%E6%90%9C%E7%B4%A2)
+来渲染。
+
+Front Matter 对应如下
+
+```
+---
+tags:
+  - vuepress
+  - plugin
+---
 ```
 
-## Author
+## Install
 
-易召强, yizhaoqiang@tinman.cn
+```bash
+npm install vuepress-plugin-md-tags
+```
 
-## License
+## Usage
 
-TianyiUIEngine is available under the MIT license. See the LICENSE file for more info.
+```javascript
+module.exports = {
+  "plugins": [
+    ["vuepress-plugin-md-tags"]
+  ]
+}
+```
+
+## 详细配置参数
+
+> 提示：tag标签会被默认插入到h1标题下，建议h1文章标题添加到文章顶部，在文档中`# vuepress-plugin-md-tags` 会即是h1标题
+
+```javascript
+module.exports = {
+  "plugins": [
+    ["vuepress-plugin-md-tags", {
+      type: 'default', // 标签预定义样式
+      color: '#fff',  // 标签字体颜色
+      borderColor: 'transparent', // 标签边框颜色
+      background: 'rgb(45, 183, 245)', // 标签背景颜色
+      selector: '.page .content__default h1' // tag标签默认是放在h1标签下，建议h1文章标题添加到文章顶部
+    }]
+  ]
+}
+```
+
+上述配置中的 color、borderColor、background 只在 type=default 时生效。
+
+type 有如下的选项：
+
+- rainbow : 彩虹主题 目前不支持自定义
+- default 默认主题，与 vuepress 官方默认主题颜色一致；
+- primary : 语义主题
+- success : 语义主题
+- info : 语义主题
+- warning : 语义主题
+- danger : 语义主题

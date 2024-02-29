@@ -1,20 +1,20 @@
 {
-  "name": "tianyi_test_js_yy",
-  "version": "1.0.0",
-  "description": "tianyi_test",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yi821661664/TianyiUIEngine.git"
-  },
-  "keywords": ["tianyi", "test_js_yy",],
-  "author": "tianyi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yi821661664/TianyiUIEngine/issues"
-  },
-  "homepage": "https://github.com/yi821661664/TianyiUIEngine"
+    "name": "tianyi_test_js_yy",
+    "version": "1.0.0",
+    "description": "tianyi_test",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yi821661664/TianyiUIEngine.git"
+    },
+    "keywords": ["tianyi", "test_js_yy",],
+    "author": "tianyi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yi821661664/TianyiUIEngine/issues"
+    },
+    "homepage": "https://github.com/yi821661664/TianyiUIEngine"
 }

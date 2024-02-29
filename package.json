@@ -1,18 +1,18 @@
 {
-  "name": "TianyiUIEngine", // 包名
-  "version": "1.0.0", // 版本
-  "description": "xxx", // 描述
-  "main": "index.js", // 入口文件
+  "name": "TianyiUIEngine",
+  "version": "1.0.0",
+  "description": "xxx",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": { // 仓库
+  "repository": {
     "type": "git",
     "url": "https://github.com/yi821661664/TianyiUIEngine.git"
   },
-  "keywords": ["vuepress@1.x", "vuepress-plugin", "tags"], // 关键字
-  "author": "tianyi", // 作者
-  "license": "ISC", // license
+  "keywords": ["TianyiUIEngine", "tianyi-plugin", "tags"],
+  "author": "tianyi",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/yi821661664/TianyiUIEngine/issues"
   },

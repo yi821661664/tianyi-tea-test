@@ -8,13 +8,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yi821661664/TianyiUIEngine.git"
+        "url": "https://github.com/yi821661664/tianyi-tea-test.git"
     },
     "keywords": ["tianyi", "tianyi_tea"],
     "author": "tianyi",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/yi821661664/TianyiUIEngine/issues"
+        "url": "https://github.com/yi821661664/tianyi-tea-test/issues"
     },
-    "homepage": "https://github.com/yi821661664/TianyiUIEngine"
+    "homepage": "https://github.com/yi821661664/tianyi-tea-test"
 }

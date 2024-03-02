@@ -1,5 +1,5 @@
 {
-    "name": "tianyi_test_js_yy",
+    "name": "tianyi_tea",
     "version": "1.0.1",
     "description": "tianyi_test",
     "main": "index.js",
@@ -10,7 +10,7 @@
         "type": "git",
         "url": "https://github.com/yi821661664/TianyiUIEngine.git"
     },
-    "keywords": ["tianyi", "test_js_yy"],
+    "keywords": ["tianyi", "tianyi_tea"],
     "author": "tianyi",
     "license": "ISC",
     "bugs": {
